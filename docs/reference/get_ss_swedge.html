@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>get_icc — get_icc • sampsizer</title>
+<title>get_ss_swedge — get_ss_swedge • sampsizer</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,11 +30,10 @@
 
 
 
-<meta property="og:title" content="get_icc — get_icc" />
+<meta property="og:title" content="get_ss_swedge — get_ss_swedge" />
 
-<meta property="og:description" content="Function to calculate the intracluster correlation coefficient of an
-indicator collected from random cluster survey (RCS). This is a wrapper of
-the deff() function in the Hmisc package." />
+<meta property="og:description" content="Function to calculate sample size requirements for a stepped wedge cluster
+randomised study." />
 <meta name="twitter:card" content="summary" />
 
 
@@ -102,55 +101,60 @@ the deff() function in the Hmisc package." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>get_icc</h1>
-    <small class="dont-index">Source: <a href='https://github.com/validmeasures/sampsizer/blob/master/R/get_icc.R'><code>R/get_icc.R</code></a></small>
-    <div class="hidden name"><code>get_icc.Rd</code></div>
+    <h1>get_ss_swedge</h1>
+    <small class="dont-index">Source: <a href='https://github.com/validmeasures/sampsizer/blob/master/R/stepped_wedge.r'><code>R/stepped_wedge.r</code></a></small>
+    <div class="hidden name"><code>get_ss_swedge.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>Function to calculate the intracluster correlation coefficient of an
-indicator collected from random cluster survey (RCS). This is a wrapper of
-the <code>deff()</code> function in the <code>Hmisc</code> package.</p>
+    <p>Function to calculate sample size requirements for a stepped wedge cluster
+randomised study.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>get_icc</span>(<span class='no'>x</span>, <span class='no'>cluster</span>)</pre>
+    <pre class="usage"><span class='fu'>get_ss_swedge</span>(<span class='kw'>z1</span> <span class='kw'>=</span> <span class='fl'>1.96</span>, <span class='kw'>z2</span> <span class='kw'>=</span> <span class='fl'>0.84</span>, <span class='no'>p1</span>, <span class='no'>p2</span>, <span class='no'>deff</span>)</pre>
     
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>x</th>
-      <td><p>variable to calculate ICC from</p></td>
+      <th>z1</th>
+      <td><p>The z-score indicating level of significance (confidence interval).
+Default at 1.96 for 95% confidence interval.</p></td>
     </tr>
     <tr>
-      <th>cluster</th>
-      <td><p>variable identifying the clusters or groupings of the variable</p></td>
+      <th>z2</th>
+      <td><p>desired power. Default at 0.84 for 80% power.</p></td>
+    </tr>
+    <tr>
+      <th>p1</th>
+      <td><p>Expected proportion for control group.</p></td>
+    </tr>
+    <tr>
+      <th>p2</th>
+      <td><p>Expected proportion for intervention group</p></td>
+    </tr>
+    <tr>
+      <th>deff</th>
+      <td><p>Design effect of a stepped wedge cluster randomised study</p></td>
     </tr>
     </table>
     
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>A vector with named elements n (total number of non-missing observations),
-    <code>clusters</code> (number of clusters after deleting missing data),
-    <code>rho</code> (intra-cluster correlation), and <code>deff</code> (design effect).</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'>  <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>sample</span>(<span class='fl'>1</span>:<span class='fl'>2</span>, <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>25</span>, <span class='kw'>replace</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
-  <span class='no'>cluster</span> <span class='kw'>&lt;-</span> <span class='fu'>c</span>(<span class='fu'>rep</span>(<span class='fl'>1</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>2</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>3</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>4</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>5</span>, <span class='fl'>5</span>))
-  <span class='fu'>get_icc</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>x</span>, <span class='kw'>cluster</span> <span class='kw'>=</span> <span class='no'>cluster</span>)</div><div class='output co'>#&gt;          n   clusters        rho       deff 
-#&gt; 25.0000000  5.0000000 -0.1284722  0.4861111 </div><div class='input'>
+    <pre class="examples"><div class='input'>
+ <span class='fu'>get_ss_swedge</span>(<span class='kw'>z1</span> <span class='kw'>=</span> <span class='fl'>1.96</span>, <span class='kw'>z2</span> <span class='kw'>=</span> <span class='fl'>0.84</span>,
+               <span class='kw'>p1</span> <span class='kw'>=</span> <span class='fl'>0.2</span>, <span class='kw'>p2</span> <span class='kw'>=</span> <span class='fl'>0.15</span>,
+               <span class='kw'>deff</span> <span class='kw'>=</span> <span class='fu'><a href='get_deff_swedge.html'>get_deff_swedge</a></span>(<span class='kw'>k</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>b</span> <span class='kw'>=</span> <span class='fl'>1</span>, <span class='kw'>t</span> <span class='kw'>=</span> <span class='fl'>1</span>,
+                                      <span class='kw'>icc</span> <span class='kw'>=</span> <span class='fl'>0.034</span>, <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>192</span>))</div><div class='output co'>#&gt; [1] 2552.836</div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
-      <li><a href="#value">Value</a></li>
-      
+            
       <li><a href="#examples">Examples</a></li>
     </ul>
 

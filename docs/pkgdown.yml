@@ -3,6 +3,6 @@ pkgdown: 1.1.0
 pkgdown_sha: ~
 articles: []
 urls:
-  reference: https://nutriverse.validmeasures.org/nipnTK/reference
-  article: https://nutriverse.validmeasures.org/nipnTK/articles
+  reference: https://validmeasures.org/sampsizer/reference
+  article: https://validmeasures.org/sampsizer/articles
 
