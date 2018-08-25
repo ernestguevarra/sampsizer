@@ -4,7 +4,8 @@
 \alias{get_ss_prevalence}
 \title{get_ss_prevalence}
 \usage{
-get_ss_prevalence(z = 1.96, p = 0.5, c = 0.1, deff = 2)
+get_ss_prevalence(z = 1.96, p = 0.5, c = 0.1, deff = 2,
+  fpc = FALSE, pop = NULL)
 }
 \arguments{
 \item{z}{The z-score/z-value for a 95\% confidence interval. Typical vaues
@@ -27,6 +28,12 @@ suvey design. For simple random sample (SRS) surveys, a \code{deff} of
 usually used. If survey data from previous cluster surveys is available,
 \code{deff} can be calculated using \code{deff()} function from
 \code{Hmisc} package.}
+
+\item{fpc}{Logical. Default FALSE. If TRUE, finite population correct (FPC)
+is applied.}
+
+\item{pop}{Population size from which sample has been drawn from. If
+\code{fpc} is TRUE, \code{pop} is required.}
 }
 \value{
 A numeric value for sample size required to estimate the required
@@ -34,8 +41,9 @@ A numeric value for sample size required to estimate the required
 }
 \description{
 Function to calculate sample size for estimating prevalence/proportional
-indicators from a simple random sample (SRS) or random cluster sample (RCS)
-surveys.
+indicators from a simple random sample (SRS) or a random cluster sample (RCS)
+survey. This function has an option to apply a finite population correction
+(FPC) to the sample size calculations.
 }
 \examples{
   # Calculate sample size to estimate a proportion with 95\% confidence
