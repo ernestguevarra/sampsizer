@@ -1,0 +1,8 @@
+pandoc: 2.0.4
+pkgdown: 1.1.0
+pkgdown_sha: ~
+articles: []
+urls:
+  reference: https://nutriverse.validmeasures.org/nipnTK/reference
+  article: https://nutriverse.validmeasures.org/nipnTK/articles
+
