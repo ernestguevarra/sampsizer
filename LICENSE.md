@@ -1,6 +1,6 @@
-MIT License
+# MIT License
 
-Copyright (c) 2018 Valid Measures
+Copyright (c) 2018 Ernest Guevarra and Valid International Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
