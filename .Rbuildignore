@@ -8,3 +8,4 @@
 ^codecov\.yml$
 ^LICENSE\.md$
 ^_pkgdown\.yml$
+^docs$
