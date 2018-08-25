@@ -3,7 +3,7 @@ Type: Package
 Title: An Implementation of Sample Size Equations for Calculating Various Estimators in R
 Version: 0.1.0
 Authors@R: as.person(c(
-    "Ernest Guevarra <ernestgmd@gmail.com> [aut, cre, cph]",
+    "Ernest Guevarra <ernest@guevarra.io> [aut, cre, cph]",
     "Valid International <office@validinternational.org> [cph]"
   ))
 Description: Thre are many sample size equations for calculating various
