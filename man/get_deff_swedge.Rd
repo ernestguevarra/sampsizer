@@ -17,6 +17,10 @@ get_deff_swedge(k, b, t, icc, size)
 
 \item{size}{cluster size}
 }
+\value{
+A numeric value of the design effect of a stepped wedge cluster
+    ranomised study
+}
 \description{
 Function to calculate the design effect of a stepped wedge cluster randomised
 study.

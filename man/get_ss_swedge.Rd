@@ -18,6 +18,10 @@ Default at 1.96 for 95\% confidence interval.}
 
 \item{deff}{Design effect of a stepped wedge cluster randomised study}
 }
+\value{
+A numeric value of sample size needed for a stepped wedge cluster
+    ranomised study
+}
 \description{
 Function to calculate sample size requirements for a stepped wedge cluster
 randomised study.
