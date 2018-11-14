@@ -11,7 +11,7 @@
 #' @param icc Intracluster correlation coefficient (\code{ICC})
 #' @param size cluster size
 #'
-#' @result A numeric value of the design effect of a stepped wedge cluster
+#' @return A numeric value of the design effect of a stepped wedge cluster
 #'     ranomised study
 #'
 #' @examples
@@ -45,7 +45,7 @@ get_deff_swedge <- function(k, b, t, icc, size) {
 #' @param p2 Expected proportion for intervention group
 #' @param deff Design effect of a stepped wedge cluster randomised study
 #'
-#' @result A numeric value of sample size needed for a stepped wedge cluster
+#' @return A numeric value of sample size needed for a stepped wedge cluster
 #'     ranomised study
 #'
 #' @examples
