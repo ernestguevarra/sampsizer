@@ -50,7 +50,7 @@ get_k_roc <- function(p) {
 
 get_a_roc <- function(AUC) {
   ## Check that AUC is greater than 0.5 and up to 1
-  if(AUC <= 0.5 | AUC >= 1) {
+  if(AUC <= 0.5 | AUC > 1) {
     stop("Area under the ROC curve (AOC) must be greater than 0.5 and not greater than 1.", call. = TRUE)
   }
   a <- qnorm(AUC) * 1.414
