@@ -84,12 +84,7 @@ the deff() function in the Hmisc package." />
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="https://github.com/validmeasures/sampsizer">
-    <span class="fa fa-github fa-lg"></span>
-     
-  </a>
-</li>
+        
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -103,7 +98,7 @@ the deff() function in the Hmisc package." />
   <div class="col-md-9 contents">
     <div class="page-header">
     <h1>get_icc</h1>
-    <small class="dont-index">Source: <a href='https://github.com/validmeasures/sampsizer/blob/master/R/get_icc.R'><code>R/get_icc.R</code></a></small>
+    
     <div class="hidden name"><code>get_icc.Rd</code></div>
     </div>
 
@@ -140,8 +135,8 @@ the <code>deff()</code> function in the <code>Hmisc</code> package.</p>
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>  <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'>sample</span>(<span class='fl'>1</span>:<span class='fl'>2</span>, <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>25</span>, <span class='kw'>replace</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
   <span class='no'>cluster</span> <span class='kw'>&lt;-</span> <span class='fu'>c</span>(<span class='fu'>rep</span>(<span class='fl'>1</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>2</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>3</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>4</span>, <span class='fl'>5</span>), <span class='fu'>rep</span>(<span class='fl'>5</span>, <span class='fl'>5</span>))
-  <span class='fu'>get_icc</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>x</span>, <span class='kw'>cluster</span> <span class='kw'>=</span> <span class='no'>cluster</span>)</div><div class='output co'>#&gt;          n   clusters        rho       deff 
-#&gt; 25.0000000  5.0000000 -0.1284722  0.4861111 </div><div class='input'>
+  <span class='fu'>get_icc</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>x</span>, <span class='kw'>cluster</span> <span class='kw'>=</span> <span class='no'>cluster</span>)</div><div class='output co'>#&gt;           n    clusters         rho        deff 
+#&gt; 25.00000000  5.00000000  0.02597403  1.10389610 </div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
