@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Function reference • sampsizer</title>
+<title>get_vf_roc — get_vf_roc • sampsizer</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,7 +30,12 @@
 
 
 
-<meta property="og:title" content="Function reference" />
+<meta property="og:title" content="get_vf_roc — get_vf_roc" />
+
+<meta property="og:description" content="Function to calculate variance function (VF) of the area under the curve
+(AUC) for the received operator characteristic (ROC) surve sample size
+calculations" />
+<meta name="twitter:card" content="summary" />
 
 
 
@@ -46,7 +51,7 @@
   </head>
 
   <body>
-    <div class="container template-reference-index">
+    <div class="container template-reference-topic">
       <header>
       <div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
@@ -95,102 +100,59 @@
       </header>
 
 <div class="row">
-  <div class="contents col-md-9">
+  <div class="col-md-9 contents">
     <div class="page-header">
-      <h1>Reference</h1>
+    <h1>get_vf_roc</h1>
+    <small class="dont-index">Source: <a href='https://github.com/validmeasures/sampsizer/blob/master/R/roc.R'><code>R/roc.R</code></a></small>
+    <div class="hidden name"><code>get_vf_roc.Rd</code></div>
     </div>
 
-    <table class="ref-index">
+    <div class="ref-description">
+    
+    <p>Function to calculate variance function (VF) of the area under the curve
+(AUC) for the received operator characteristic (ROC) surve sample size
+calculations</p>
+    
+    </div>
 
-    <colgroup>
-      
-      <col class="alias" />
-      <col class="title" />
-    </colgroup>
-
-    <tbody>
-      <tr>
-        <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
-          <p class="section-desc"></p>
-        </th>
-      </tr>
-      <tr>
-        
-        <td>
-          <p><code><a href="get_a_roc.html">get_a_roc()</a></code> </p>
-        </td>
-        <td><p>get_a_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_deff.html">get_deff()</a></code> </p>
-        </td>
-        <td><p>get_deff</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_deff_swedge.html">get_deff_swedge()</a></code> </p>
-        </td>
-        <td><p>get_deff_swedge</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_icc.html">get_icc()</a></code> </p>
-        </td>
-        <td><p>get_icc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_k_roc.html">get_k_roc()</a></code> </p>
-        </td>
-        <td><p>get_k_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_n_roc.html">get_n_roc()</a></code> </p>
-        </td>
-        <td><p>get_n_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_nc_roc.html">get_nc_roc()</a></code> </p>
-        </td>
-        <td><p>get_nc_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_ss_prevalence.html">get_ss_prevalence()</a></code> </p>
-        </td>
-        <td><p>get_ss_prevalence</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_ss_swedge.html">get_ss_swedge()</a></code> </p>
-        </td>
-        <td><p>get_ss_swedge</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_vf_roc.html">get_vf_roc()</a></code> </p>
-        </td>
-        <td><p>get_vf_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="sampsizer.html">sampsizer</a></code> </p>
-        </td>
-        <td><p>sampsizer</p></td>
-      </tr>
-    </tbody>
+    <pre class="usage"><span class='fu'>get_vf_roc</span>(<span class='no'>A</span>, <span class='no'>p</span>)</pre>
+    
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>A</th>
+      <td><p>Binormal distribution parameter</p></td>
+    </tr>
+    <tr>
+      <th>p</th>
+      <td><p>Prevalence or proportion of cases in the relevant population. Used
+to calculate ratio <code>k</code> of cases to non-cases in the relevant
+population</p></td>
+    </tr>
     </table>
-  </div>
+    
+    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
+    <p>Obuchowski NA. Fundamentals of clinical research for radiologists:
+  ROC Analysis. American Journal of Roentgenology. 2005;184.</p>
+    
+
+    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
+    <pre class="examples"><div class='input'>
+  <span class='fu'>get_vf_roc</span>(<span class='kw'>A</span> <span class='kw'>=</span> <span class='fl'>2</span>, <span class='kw'>p</span> <span class='kw'>=</span> <span class='fl'>0.5</span>)</div><div class='output co'>#&gt; [1] 0.05359277</div><div class='input'>
+</div></pre>
+  </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#arguments">Arguments</a></li>
+      
+      <li><a href="#source">Source</a></li>
+      
+      <li><a href="#examples">Examples</a></li>
     </ul>
+
   </div>
 </div>
 
