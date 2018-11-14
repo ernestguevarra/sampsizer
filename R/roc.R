@@ -54,7 +54,7 @@ get_a_roc <- function(AUC) {
   if(AUC <= 0.5 | AUC >= 1) {
     stop("Area under the ROC curve (AOC) must be greater than 0.5 and not greater than 1.", call. = TRUE)
   }
-  a <- qnorm(1 - AUC) * 1.414
+  a <- qnorm(AUC) * 1.414
   return(a)
 }
 
