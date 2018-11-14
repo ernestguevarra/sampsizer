@@ -8,6 +8,7 @@
 #' @name sampsizer
 #'
 #' @importFrom Hmisc deff
+#' @importFrom stats qnorm
 #
 ################################################################################
 NULL
