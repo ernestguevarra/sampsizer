@@ -26,6 +26,10 @@ received operator characteristic (ROC) surve sample size calculations}
 to calculate ratio \code{k} of cases to non-cases in the relevant
 population}
 }
+\value{
+A numeric value for the total sample size for an ROC analysis for a
+    single test
+}
 \description{
 Function to calculate total sample size for an ROC analysis for a single
 test

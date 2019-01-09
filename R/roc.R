@@ -7,10 +7,9 @@
 #'
 #' @param p Prevalence or proportion of cases in the relevant population
 #'
-#' @result A numeric value of the ratio of cases to non-cases in the sample
+#' @return A numeric value of the ratio of cases to non-cases in the sample
 #'
 #' @examples
-#'
 #'   get_k_roc(p = 0.5)
 #'
 #' @source Obuchowski NA. Fundamentals of clinical research for radiologists:
@@ -35,7 +34,7 @@ get_k_roc <- function(p) {
 #'
 #' @param AUC Area under the ROC curve. Ranges from greater than 0.5 to 1.
 #'
-#' @result A numeric value of the A binormal distribution parameter
+#' @return A numeric value of the A binormal distribution parameter
 #'
 #' @examples
 #'
@@ -51,10 +50,10 @@ get_k_roc <- function(p) {
 
 get_a_roc <- function(AUC) {
   ## Check that AUC is greater than 0.5 and up to 1
-  if(AUC <= 0.5 | AUC >= 1) {
+  if(AUC <= 0.5 | AUC > 1) {
     stop("Area under the ROC curve (AOC) must be greater than 0.5 and not greater than 1.", call. = TRUE)
   }
-  a <- qnorm(1 - AUC) * 1.414
+  a <- qnorm(AUC) * 1.414
   return(a)
 }
 
@@ -64,13 +63,17 @@ get_a_roc <- function(AUC) {
 #' get_vf_roc
 #'
 #' Function to calculate variance function (VF) of the area under the curve
-#' (AUC) for the received operator characteristic (ROC) surve sample size
+#' (AUC) for the received operator characteristic (ROC) curve sample size
 #' calculations
 #'
 #' @param A Binormal distribution parameter
 #' @param p Prevalence or proportion of cases in the relevant population. Used
 #'     to calculate ratio \code{k} of cases to non-cases in the relevant
 #'     population
+#'
+#' @return A numeric value for variance function (\code{VF}) of the area under
+#'     the curve (AUC) for the receiver operator characteristic (ROC) curve
+#'     sample size calculations
 #'
 #' @examples
 #'
@@ -105,6 +108,9 @@ get_vf_roc <- function(A, p) {
 #'     at ±5\% (0.05).
 #' @param vf Variance function of the area under the curve (AUC) for the
 #'     received operator characteristic (ROC) surve sample size calculations
+#'
+#' @return A numeric value for the number of cases needed for an ROC analysis
+#'     for a single test
 #'
 #' @examples
 #'
@@ -142,6 +148,9 @@ get_nc_roc <- function(z = 1.96, precision = 0.05, vf) {
 #' @param p Prevalence or proportion of cases in the relevant population. Used
 #'     to calculate ratio \code{k} of cases to non-cases in the relevant
 #'     population
+#'
+#' @return A numeric value for the total sample size for an ROC analysis for a
+#'     single test
 #'
 #' @examples
 #'

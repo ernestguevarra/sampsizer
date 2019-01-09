@@ -17,9 +17,14 @@ get_vf_roc(A, p)
 to calculate ratio \code{k} of cases to non-cases in the relevant
 population}
 }
+\value{
+A numeric value for variance function (\code{VF}) of the area under
+    the curve (AUC) for the receiver operator characteristic (ROC) curve
+    sample size calculations
+}
 \description{
 Function to calculate variance function (VF) of the area under the curve
-(AUC) for the received operator characteristic (ROC) surve sample size
+(AUC) for the received operator characteristic (ROC) curve sample size
 calculations
 }
 \examples{

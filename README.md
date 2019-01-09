@@ -1,6 +1,6 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-sampsizer: An Implementation of Sample Size Equations for Calculating Various Estimators in R
-=============================================================================================
+sampsizer: An Implementation of Equations for Calculating Sample Sizes for Various Estimators in R
+==================================================================================================
 
 [![Travis-CI Build
 Status](https://travis-ci.org/validmeasures/sampsizer.svg?branch=master)](https://travis-ci.org/validmeausures/sampsizer)

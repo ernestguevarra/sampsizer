@@ -22,6 +22,10 @@ at ±5\% (0.05).}
 \item{vf}{Variance function of the area under the curve (AUC) for the
 received operator characteristic (ROC) surve sample size calculations}
 }
+\value{
+A numeric value for the number of cases needed for an ROC analysis
+    for a single test
+}
 \description{
 Function to calculate the number of cases needed for an ROC analysis for a
 single test

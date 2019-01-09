@@ -13,12 +13,14 @@ get_k_roc(p)
 \arguments{
 \item{p}{Prevalence or proportion of cases in the relevant population}
 }
+\value{
+A numeric value of the ratio of cases to non-cases in the sample
+}
 \description{
 Function to calculate ratio of cases to non-cases in the sample for an ROC
 analysis
 }
 \examples{
-
   get_k_roc(p = 0.5)
 
 }

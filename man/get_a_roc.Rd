@@ -13,6 +13,9 @@ get_a_roc(AUC)
 \arguments{
 \item{AUC}{Area under the ROC curve. Ranges from greater than 0.5 to 1.}
 }
+\value{
+A numeric value of the A binormal distribution parameter
+}
 \description{
 Function to calculate the A binormal distribution parameter
 }
