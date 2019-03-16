@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://validmeasures.org/sampsizer/index.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/index.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_a_roc.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_a_roc.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_deff.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_deff.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_deff_swedge.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_deff_swedge.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_icc.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_icc.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_k_roc.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_k_roc.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_n_roc.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_n_roc.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_nc_roc.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_nc_roc.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_ss_prevalence.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_ss_prevalence.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_ss_swedge.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_ss_swedge.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/get_vf_roc.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/get_vf_roc.html</loc>
   </url>
   <url>
-    <loc>https://validmeasures.org/sampsizer/reference/sampsizer.html</loc>
+    <loc>https://ernest.guevarra.io/sampsizer/reference/sampsizer.html</loc>
   </url>
 </urlset>
