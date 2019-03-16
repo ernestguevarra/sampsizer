@@ -3,8 +3,8 @@ sampsizer: An Implementation of Equations for Calculating Sample Sizes for Vario
 ==================================================================================================
 
 [![Travis-CI Build
-Status](https://travis-ci.org/validmeasures/sampsizer.svg?branch=master)](https://travis-ci.org/validmeausures/sampsizer)
+Status](https://travis-ci.org/ernestguevarra/sampsizer.svg?branch=master)](https://travis-ci.org/ernestguevarra/sampsizer)
 [![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/validmeasures/sampsizer?branch=master&svg=true)](https://ci.appveyor.com/project/validmeasures/sampsizer)
+Status](https://ci.appveyor.com/api/projects/status/github/ernestguevarra/sampsizer?branch=master&svg=true)](https://ci.appveyor.com/project/ernestguevarra/sampsizer)
 [![Coverage
-Status](https://img.shields.io/codecov/c/github/validmeasures/sampsizer/master.svg)](https://codecov.io/github/validmeasures/sampsizer?branch=master)
+Status](https://img.shields.io/codecov/c/github/ernestguevarra/sampsizer/master.svg)](https://codecov.io/github/ernestguevarra/sampsizer?branch=master)
