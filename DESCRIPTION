@@ -3,10 +3,8 @@ Type: Package
 Title: An Implementation of Equations for Calculating Sample Sizes for Various 
     Estimators in R
 Version: 0.1.0
-Authors@R: as.person(c(
-    "Ernest Guevarra <ernest@guevarra.io> [aut, cre, cph]",
-    "Valid International <office@validinternational.org> [cph]"
-  ))
+Authors@R: as.person(
+    "Ernest Guevarra <ernest@guevarra.io> [aut, cre, cph]")
 Description: Thre are many sample size equations for calculating various
     estimators. This package provides functions to implement these calcualtions
     in R.
@@ -15,7 +13,6 @@ Suggests: covr
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.1.0
-URL: https://validmeasures.org/sampsizer
-BugReports: https://github.com/validmeasures/sampsizer/issues
-
+RoxygenNote: 6.1.1
+URL: https://ernest.guevarra.io/sampsizer
+BugReports: https://github.com/ernestguevarra/sampsizer/issues
