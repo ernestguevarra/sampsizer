@@ -21,3 +21,12 @@ knitr::opts_chunk$set(
 [![Coverage Status](https://img.shields.io/codecov/c/github/ernestguevarra/sampsizer/master.svg)](https://codecov.io/github/ernestguevarra/sampsizer?branch=master)
 
 
+## Installation
+
+The `sampsizer` package is currently only available via GitHub. To install, run the following commands in `R`:
+
+```{r, echo = TRUE, eval = FALSE}
+if(!require(devtools)) install.packages("devtools")
+devtools::install_github("ernestguevarra/sampsizer")
+```
+

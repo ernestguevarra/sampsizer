@@ -8,3 +8,14 @@ Status](https://travis-ci.org/ernestguevarra/sampsizer.svg?branch=master)](https
 Status](https://ci.appveyor.com/api/projects/status/github/ernestguevarra/sampsizer?branch=master&svg=true)](https://ci.appveyor.com/project/ernestguevarra/sampsizer)
 [![Coverage
 Status](https://img.shields.io/codecov/c/github/ernestguevarra/sampsizer/master.svg)](https://codecov.io/github/ernestguevarra/sampsizer?branch=master)
+
+Installation
+------------
+
+The `sampsizer` package is currently only available via GitHub. To
+install, run the following commands in `R`:
+
+``` r
+if(!require(devtools)) install.packages("devtools")
+devtools::install_github("ernestguevarra/sampsizer")
+```
