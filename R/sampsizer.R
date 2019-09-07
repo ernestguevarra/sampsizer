@@ -6,9 +6,10 @@
 #'
 #' @docType package
 #' @name sampsizer
+#' @keywords internal
 #'
 #' @importFrom Hmisc deff
 #' @importFrom stats qnorm
 #
 ################################################################################
-NULL
+"_PACKAGE"

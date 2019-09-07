@@ -1,6 +1,5 @@
 ################################################################################
 #
-#' get_deff
 #'
 #' Function to calculate design effect (\code{DEFF}) given intracluster
 #' correlation coefficient (\code{ICC}) and cluster size.

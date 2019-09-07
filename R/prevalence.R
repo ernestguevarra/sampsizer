@@ -1,6 +1,5 @@
 ################################################################################
 #
-#' get_ss_prevalence
 #'
 #' Function to calculate sample size for estimating prevalence/proportional
 #' indicators from a simple random sample (SRS) or a random cluster sample (RCS)

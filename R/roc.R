@@ -1,6 +1,5 @@
 ################################################################################
 #
-#' get_k_roc
 #'
 #' Function to calculate ratio of cases to non-cases in the sample for an ROC
 #' analysis
@@ -28,7 +27,6 @@ get_k_roc <- function(p) {
 
 ################################################################################
 #
-#' get_a_roc
 #'
 #' Function to calculate the A binormal distribution parameter
 #'
@@ -60,10 +58,9 @@ get_a_roc <- function(AUC) {
 
 ################################################################################
 #
-#' get_vf_roc
 #'
 #' Function to calculate variance function (VF) of the area under the curve
-#' (AUC) for the received operator characteristic (ROC) curve sample size
+#' (AUC) for the receiver operator characteristic (ROC) curve sample size
 #' calculations
 #'
 #' @param A Binormal distribution parameter
@@ -95,7 +92,6 @@ get_vf_roc <- function(A, p) {
 
 ################################################################################
 #
-#' get_nc_roc
 #'
 #' Function to calculate the number of cases needed for an ROC analysis for a
 #' single test
@@ -132,7 +128,6 @@ get_nc_roc <- function(z = 1.96, precision = 0.05, vf) {
 
 ################################################################################
 #
-#' get_n_roc
 #'
 #' Function to calculate total sample size for an ROC analysis for a single
 #' test

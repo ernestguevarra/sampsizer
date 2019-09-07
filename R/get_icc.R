@@ -1,6 +1,5 @@
 ################################################################################
 #
-#' get_icc
 #'
 #' Function to calculate the intracluster correlation coefficient of an
 #' indicator collected from random cluster survey (RCS). This is a wrapper of

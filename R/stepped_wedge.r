@@ -1,6 +1,5 @@
 ################################################################################
 #
-#' get_deff_swedge
 #'
 #' Function to calculate the design effect of a stepped wedge cluster randomised
 #' study.
@@ -33,7 +32,6 @@ get_deff_swedge <- function(k, b, t, icc, size) {
 
 ################################################################################
 #
-#' get_ss_swedge
 #'
 #' Function to calculate sample size requirements for a stepped wedge cluster
 #' randomised study.
