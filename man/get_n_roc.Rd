@@ -2,7 +2,8 @@
 % Please edit documentation in R/roc.R
 \name{get_n_roc}
 \alias{get_n_roc}
-\title{get_n_roc}
+\title{Function to calculate total sample size for an ROC analysis for a single
+test}
 \source{
 Obuchowski NA. Fundamentals of clinical research for radiologists:
   ROC Analysis. American Journal of Roentgenology. 2005;184.

@@ -2,7 +2,8 @@
 % Please edit documentation in R/roc.R
 \name{get_k_roc}
 \alias{get_k_roc}
-\title{get_k_roc}
+\title{Function to calculate ratio of cases to non-cases in the sample for an ROC
+analysis}
 \source{
 Obuchowski NA. Fundamentals of clinical research for radiologists:
   ROC Analysis. American Journal of Roentgenology. 2005;184.

@@ -8,3 +8,16 @@
 \description{
 Calculate sample sizes for various survey settings and conditions.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/ernestguevarra/sampsizer}
+  \item Report bugs at \url{https://github.com/ernestguevarra/sampsizer/issues}
+}
+
+}
+\author{
+\strong{Maintainer}: Ernest Guevarra \email{ernest@guevarra.io} [copyright holder]
+
+}
+\keyword{internal}

@@ -2,7 +2,8 @@
 % Please edit documentation in R/get_deff.R
 \name{get_deff}
 \alias{get_deff}
-\title{get_deff}
+\title{Function to calculate design effect (\code{DEFF}) given intracluster
+correlation coefficient (\code{ICC}) and cluster size.}
 \usage{
 get_deff(x, cluster, size)
 }

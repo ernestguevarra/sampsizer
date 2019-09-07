@@ -2,7 +2,8 @@
 % Please edit documentation in R/stepped_wedge.r
 \name{get_deff_swedge}
 \alias{get_deff_swedge}
-\title{get_deff_swedge}
+\title{Function to calculate the design effect of a stepped wedge cluster randomised
+study.}
 \usage{
 get_deff_swedge(k, b, t, icc, size)
 }

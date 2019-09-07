@@ -2,7 +2,8 @@
 % Please edit documentation in R/stepped_wedge.r
 \name{get_ss_swedge}
 \alias{get_ss_swedge}
-\title{get_ss_swedge}
+\title{Function to calculate sample size requirements for a stepped wedge cluster
+randomised study.}
 \usage{
 get_ss_swedge(z1 = 1.96, z2 = 0.84, p1, p2, deff)
 }

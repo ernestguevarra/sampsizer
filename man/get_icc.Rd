@@ -2,7 +2,9 @@
 % Please edit documentation in R/get_icc.R
 \name{get_icc}
 \alias{get_icc}
-\title{get_icc}
+\title{Function to calculate the intracluster correlation coefficient of an
+indicator collected from random cluster survey (RCS). This is a wrapper of
+the \code{deff()} function in the \code{Hmisc} package.}
 \usage{
 get_icc(x, cluster)
 }

@@ -2,7 +2,7 @@
 % Please edit documentation in R/roc.R
 \name{get_a_roc}
 \alias{get_a_roc}
-\title{get_a_roc}
+\title{Function to calculate the A binormal distribution parameter}
 \source{
 Obuchowski NA. Fundamentals of clinical research for radiologists:
   ROC Analysis. American Journal of Roentgenology. 2005;184.

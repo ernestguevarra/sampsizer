@@ -2,7 +2,10 @@
 % Please edit documentation in R/prevalence.R
 \name{get_ss_prevalence}
 \alias{get_ss_prevalence}
-\title{get_ss_prevalence}
+\title{Function to calculate sample size for estimating prevalence/proportional
+indicators from a simple random sample (SRS) or a random cluster sample (RCS)
+survey. This function has an option to apply a finite population correction
+(FPC) to the sample size calculations.}
 \usage{
 get_ss_prevalence(z = 1.96, p = 0.5, c = 0.1, deff = 2,
   fpc = FALSE, pop = NULL)

@@ -2,7 +2,9 @@
 % Please edit documentation in R/roc.R
 \name{get_vf_roc}
 \alias{get_vf_roc}
-\title{get_vf_roc}
+\title{Function to calculate variance function (VF) of the area under the curve
+(AUC) for the receiver operator characteristic (ROC) curve sample size
+calculations}
 \source{
 Obuchowski NA. Fundamentals of clinical research for radiologists:
   ROC Analysis. American Journal of Roentgenology. 2005;184.
@@ -24,7 +26,7 @@ A numeric value for variance function (\code{VF}) of the area under
 }
 \description{
 Function to calculate variance function (VF) of the area under the curve
-(AUC) for the received operator characteristic (ROC) curve sample size
+(AUC) for the receiver operator characteristic (ROC) curve sample size
 calculations
 }
 \examples{

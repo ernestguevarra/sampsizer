@@ -2,7 +2,8 @@
 % Please edit documentation in R/roc.R
 \name{get_nc_roc}
 \alias{get_nc_roc}
-\title{get_nc_roc}
+\title{Function to calculate the number of cases needed for an ROC analysis for a
+single test}
 \source{
 Obuchowski NA. Fundamentals of clinical research for radiologists:
   ROC Analysis. American Journal of Roentgenology. 2005;184.
