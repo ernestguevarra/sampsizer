@@ -6,12 +6,16 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>get_icc — get_icc • sampsizer</title>
+<title>Function to calculate the intracluster correlation coefficient of an
+indicator collected from random cluster survey (RCS). This is a wrapper of
+the <code>deff()</code> function in the <code>Hmisc</code> package. — get_icc • sampsizer</title>
+
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
@@ -30,12 +34,15 @@
 
 
 
-<meta property="og:title" content="get_icc — get_icc" />
 
+<meta property="og:title" content="Function to calculate the intracluster correlation coefficient of an
+indicator collected from random cluster survey (RCS). This is a wrapper of
+the <code>deff()</code> function in the <code>Hmisc</code> package. — get_icc" />
 <meta property="og:description" content="Function to calculate the intracluster correlation coefficient of an
 indicator collected from random cluster survey (RCS). This is a wrapper of
 the deff() function in the Hmisc package." />
 <meta name="twitter:card" content="summary" />
+
 
 
 
@@ -84,9 +91,13 @@ the deff() function in the Hmisc package." />
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/ernestguevarra/sampsizer">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -99,21 +110,21 @@ the deff() function in the Hmisc package." />
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>get_icc</h1>
-    
+    <h1>Function to calculate the intracluster correlation coefficient of an
+indicator collected from random cluster survey (RCS). This is a wrapper of
+the <code>deff()</code> function in the <code>Hmisc</code> package.</h1>
+    <small class="dont-index">Source: <a href='https://github.com/ernestguevarra/sampsizer/blob/master/R/get_icc.R'><code>R/get_icc.R</code></a></small>
     <div class="hidden name"><code>get_icc.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    
     <p>Function to calculate the intracluster correlation coefficient of an
 indicator collected from random cluster survey (RCS). This is a wrapper of
 the <code>deff()</code> function in the <code>Hmisc</code> package.</p>
-    
     </div>
 
     <pre class="usage"><span class='fu'>get_icc</span>(<span class='no'>x</span>, <span class='no'>cluster</span>)</pre>
-    
+
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
@@ -126,28 +137,25 @@ the <code>deff()</code> function in the <code>Hmisc</code> package.</p>
       <td><p>variable identifying the clusters or groupings of the variable</p></td>
     </tr>
     </table>
-    
+
     <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
     <p>A vector with named elements n (total number of non-missing observations),
     <code>clusters</code> (number of clusters after deleting missing data),
     <code>rho</code> (intra-cluster correlation), and <code>deff</code> (design effect).</p>
-    
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
     <pre class="examples"><div class='input'>  <span class='no'>x</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/sample'>sample</a></span>(<span class='fl'>1</span>:<span class='fl'>2</span>, <span class='kw'>size</span> <span class='kw'>=</span> <span class='fl'>25</span>, <span class='kw'>replace</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>)
   <span class='no'>cluster</span> <span class='kw'>&lt;-</span> <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/c'>c</a></span>(<span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>1</span>, <span class='fl'>5</span>), <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>2</span>, <span class='fl'>5</span>), <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>3</span>, <span class='fl'>5</span>), <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>4</span>, <span class='fl'>5</span>), <span class='fu'><a href='https://www.rdocumentation.org/packages/base/topics/rep'>rep</a></span>(<span class='fl'>5</span>, <span class='fl'>5</span>))
-  <span class='fu'>get_icc</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>x</span>, <span class='kw'>cluster</span> <span class='kw'>=</span> <span class='no'>cluster</span>)</div><div class='output co'>#&gt;           n    clusters         rho        deff 
-#&gt; 25.00000000  5.00000000  0.02597403  1.10389610 </div><div class='input'>
+  <span class='fu'>get_icc</span>(<span class='kw'>x</span> <span class='kw'>=</span> <span class='no'>x</span>, <span class='kw'>cluster</span> <span class='kw'>=</span> <span class='no'>cluster</span>)</div><div class='output co'>#&gt;          n   clusters        rho       deff 
+#&gt; 25.0000000  5.0000000 -0.1217949  0.5128205 </div><div class='input'>
 </div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       <li><a href="#arguments">Arguments</a></li>
-      
       <li><a href="#value">Value</a></li>
-      
       <li><a href="#examples">Examples</a></li>
     </ul>
 

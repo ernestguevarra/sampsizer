@@ -8,10 +8,12 @@
 
 <title>Function reference • sampsizer</title>
 
+
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 <!-- Bootstrap -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.7/sandstone/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous" />
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script>
 
@@ -30,7 +32,9 @@
 
 
 
+
 <meta property="og:title" content="Function reference" />
+
 
 
 
@@ -79,9 +83,13 @@
   <a href="../news/index.html">Changelog</a>
 </li>
       </ul>
-      
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/ernestguevarra/sampsizer">
+    <span class="fa fa-github fa-lg"></span>
+     
+  </a>
+</li>
       </ul>
       
     </div><!--/.nav-collapse -->
@@ -108,76 +116,113 @@
     <tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+          <h2 id="section-description" class="hasAnchor"><a href="#section-description" class="anchor"></a>Description</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
       <tr>
         
         <td>
-          <p><code><a href="get_a_roc.html">get_a_roc()</a></code> </p>
+          <p><code><a href="sampsizer.html">sampsizer</a></code> </p>
         </td>
-        <td><p>get_a_roc</p></td>
-      </tr><tr>
+        <td><p>sampsizer</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-sample-size-for-simple-random-surveys-or-random-cluster-surveys" class="hasAnchor"><a href="#section-sample-size-for-simple-random-surveys-or-random-cluster-surveys" class="anchor"></a>Sample size for simple random surveys or random cluster surveys</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
         
         <td>
           <p><code><a href="get_deff.html">get_deff()</a></code> </p>
         </td>
-        <td><p>get_deff</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_deff_swedge.html">get_deff_swedge()</a></code> </p>
-        </td>
-        <td><p>get_deff_swedge</p></td>
+        <td><p>Function to calculate design effect (<code>DEFF</code>) given intracluster
+correlation coefficient (<code>ICC</code>) and cluster size.</p></td>
       </tr><tr>
         
         <td>
           <p><code><a href="get_icc.html">get_icc()</a></code> </p>
         </td>
-        <td><p>get_icc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_k_roc.html">get_k_roc()</a></code> </p>
-        </td>
-        <td><p>get_k_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_n_roc.html">get_n_roc()</a></code> </p>
-        </td>
-        <td><p>get_n_roc</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="get_nc_roc.html">get_nc_roc()</a></code> </p>
-        </td>
-        <td><p>get_nc_roc</p></td>
+        <td><p>Function to calculate the intracluster correlation coefficient of an
+indicator collected from random cluster survey (RCS). This is a wrapper of
+the <code>deff()</code> function in the <code>Hmisc</code> package.</p></td>
       </tr><tr>
         
         <td>
           <p><code><a href="get_ss_prevalence.html">get_ss_prevalence()</a></code> </p>
         </td>
-        <td><p>get_ss_prevalence</p></td>
+        <td><p>Function to calculate sample size for estimating prevalence/proportional
+indicators from a simple random sample (SRS) or a random cluster sample (RCS)
+survey. This function has an option to apply a finite population correction
+(FPC) to the sample size calculations.</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-sample-size-for-stepped-wedge-studies" class="hasAnchor"><a href="#section-sample-size-for-stepped-wedge-studies" class="anchor"></a>Sample size for stepped wedge studies</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
+        
+        <td>
+          <p><code><a href="get_deff_swedge.html">get_deff_swedge()</a></code> </p>
+        </td>
+        <td><p>Function to calculate the design effect of a stepped wedge cluster randomised
+study.</p></td>
       </tr><tr>
         
         <td>
           <p><code><a href="get_ss_swedge.html">get_ss_swedge()</a></code> </p>
         </td>
-        <td><p>get_ss_swedge</p></td>
+        <td><p>Function to calculate sample size requirements for a stepped wedge cluster
+randomised study.</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-sample-size-for-receiver-operator-characteristic-curve-studies" class="hasAnchor"><a href="#section-sample-size-for-receiver-operator-characteristic-curve-studies" class="anchor"></a>Sample size for receiver-operator characteristic curve studies</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      <tr>
+        
+        <td>
+          <p><code><a href="get_k_roc.html">get_k_roc()</a></code> </p>
+        </td>
+        <td><p>Function to calculate ratio of cases to non-cases in the sample for an ROC
+analysis</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="get_a_roc.html">get_a_roc()</a></code> </p>
+        </td>
+        <td><p>Function to calculate the A binormal distribution parameter</p></td>
       </tr><tr>
         
         <td>
           <p><code><a href="get_vf_roc.html">get_vf_roc()</a></code> </p>
         </td>
-        <td><p>get_vf_roc</p></td>
+        <td><p>Function to calculate variance function (VF) of the area under the curve
+(AUC) for the receiver operator characteristic (ROC) curve sample size
+calculations</p></td>
       </tr><tr>
         
         <td>
-          <p><code><a href="sampsizer.html">sampsizer</a></code> </p>
+          <p><code><a href="get_nc_roc.html">get_nc_roc()</a></code> </p>
         </td>
-        <td><p>sampsizer</p></td>
+        <td><p>Function to calculate the number of cases needed for an ROC analysis for a
+single test</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="get_n_roc.html">get_n_roc()</a></code> </p>
+        </td>
+        <td><p>Function to calculate total sample size for an ROC analysis for a single
+test</p></td>
       </tr>
     </tbody>
     </table>
@@ -186,7 +231,10 @@
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
-      <li><a href="#section-all-functions">All functions</a></li>
+      <li><a href="#section-description">Description</a></li>
+      <li><a href="#section-sample-size-for-simple-random-surveys-or-random-cluster-surveys">Sample size for simple random surveys or random cluster surveys</a></li>
+      <li><a href="#section-sample-size-for-stepped-wedge-studies">Sample size for stepped wedge studies</a></li>
+      <li><a href="#section-sample-size-for-receiver-operator-characteristic-curve-studies">Sample size for receiver-operator characteristic curve studies</a></li>
     </ul>
   </div>
 </div>
