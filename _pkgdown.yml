@@ -1,6 +1,32 @@
 title: sampsizer
+
 url: https://ernest.guevarra.io/sampsizer
+
 template:
   params:
     bootswatch: sandstone
     #ganalytics: UA-102485058-4
+
+reference:
+- title: Description
+  contents:
+  - sampsizer
+
+- title: Sample size for simple random surveys or random cluster surveys
+  contents:
+  - get_deff
+  - get_icc
+  - get_ss_prevalence
+
+- title: Sample size for stepped wedge studies
+  contents:
+  - get_deff_swedge
+  - get_ss_swedge
+
+- title: Sample size for receiver-operator characteristic curve studies
+  contents:
+  - get_k_roc
+  - get_a_roc
+  - get_vf_roc
+  - get_nc_roc
+  - get_n_roc
